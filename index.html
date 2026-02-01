@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Percent</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <label for="current">Your current timestamp(HH:MM:SS)</label>
+      <input
+        type="text"
+        name="current"
+        id="current-ip"
+        placeholder="hh:mm:ss"
+        value="16:19:33"
+        autofocus
+      /><br />
+      <label for="total">Your total timestamp(HH:MM:SS)</label>
+      <input
+        type="text"
+        name="total"
+        id="total-ip"
+        placeholder="hh:mm:ss"
+        value="47:29:20"
+      /><br />
+      <button id="submit-btn">Find Out</button>
+      <p id="result-pg"></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
