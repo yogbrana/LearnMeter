@@ -5,26 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Progress Percent</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="container">
-      <label for="current">Your current timestamp(HH:MM:SS)</label>
-      <input
-        type="text"
-        name="current"
-        id="current-ip"
-        placeholder="hh:mm:ss"
-        value="16:19:33"
-        autofocus
-      /><br />
-      <label for="total">Your total timestamp(HH:MM:SS)</label>
-      <input
-        type="text"
-        name="total"
-        id="total-ip"
-        placeholder="hh:mm:ss"
-        value="47:29:20"
-      /><br />
+      <div id="current">
+        <label for="current">Your current timestamp(HH:MM:SS)</label>
+        <input
+          type="text"
+          name="current"
+          id="current-ip"
+          placeholder="hh:mm:ss"
+          value="16:19:33"
+          autofocus
+        /><br />
+      </div>
+      <div id="total">
+        <label for="total">Your total timestamp(HH:MM:SS)</label>
+        <input
+          type="text"
+          name="total"
+          id="total-ip"
+          placeholder="hh:mm:ss"
+          value="47:29:20"
+        /><br />
+      </div>
       <button id="submit-btn">Find Out</button>
       <p id="result-pg"></p>
     </div>
