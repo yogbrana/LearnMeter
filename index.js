@@ -2,8 +2,10 @@ const currentIp = document.getElementById("current-ip")
 const totalIp = document.getElementById("total-ip")
 const submitBtn = document.getElementById("submit-btn")
 const resultPg = document.getElementById("result-pg")
-
-
+const savedCurrent = localStorage.getItem("lastCurrentItem")
+if(savedCurrent){
+  currentIp.value = savedCurrent
+}
 
 function totalSeconds(arr){
   let sumAll = Number(arr[0])*60*60 + Number(arr[1])*60 + Number(arr[2])
@@ -20,4 +22,5 @@ submitBtn.addEventListener("click", function(){
   let tot = totalTime.split(":")
   const perc = (totalSeconds(cur) / totalSeconds(tot)) * 100
   resultPg.innerText = perc.toFixed(2) + "% of tutorial completed"
+  localStorage.setItem("lastCurrentTime",currentTime)
 })
